@@ -5,8 +5,9 @@ body {
     background-color: rgb(32, 168, 202);
 }
 h1 {
+    font-size: 50px;
     width: 20%;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
 }    
 
 .top-container { 
