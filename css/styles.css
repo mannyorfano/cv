@@ -3,6 +3,16 @@
     margin: 0;
     background-attachment: fixed;
 }
+
+.body-container {
+    margin: 0px;
+    height: 100vh;
+}
+
+.profile {
+    padding-top: 100px;
+}
+
 .main {
     font-family: 'Caveat Brush', cursive, sans-serif;
     font-size: 50px;
@@ -33,18 +43,14 @@ a {
 
 .top-container { 
     position: relative;
-    padding-top: 100px;
+    padding-top: 30px;
     background-color: #e4f9f5;
 }
 
 .middle-container {
     /*background: transparent;*/
     background-color:  #e4f9f5;
-    margin: 100px 0;
        
-}
-.bottom-container {  
-    background-color:  #e4f9f5;  
 }
 
 .pro {
@@ -67,12 +73,13 @@ a {
     width: 100px;
     height: 100px;
     left: 400px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 .mountain {
     width: 600px;
     height: 300px;
+    padding-top: 50px;
 }
 
 .work {
@@ -80,9 +87,44 @@ a {
     margin-right: auto;
 }
 
+.work-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ {
+    padding: 20px;
+    margin: 20px;
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+
 .skill {
     margin-left: auto;
     margin-right: auto;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.skill-img-wrapper, .skill-experience-wrapper {
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .skill-img-wrapper, .skill-experience-wrapper, .work-img-wrapper, .work-experience-wrapper {
+        font-size: 0.8em;
+    }
 }
 
 p {
@@ -135,6 +177,30 @@ td {
     text-decoration: none;
 }
 
+.bottom-container {  
+    background-color:  #e4f9f5;  
+    margin: 0%;
+    padding-top: 30px;
+}
+
+.footer-link {
+    padding: 10px;
+}
+
+.alt:hover {
+    border: solid #00ffff;
+    background-color: #00f3ff;
+    padding: 0px;
+    color: #ec9a1e;
+}
+
+.footer-link:hover {
+    border: solid #00ffff;
+    background-color: #00f3ff;
+    padding: 0 10px;
+    color: #ec9a1e;
+}
+
 /*Everything about ALTF4*/
 
 /* Master style */
@@ -153,7 +219,7 @@ td {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 28px;
+    padding: 15px;
 }
 
 .left-side {
